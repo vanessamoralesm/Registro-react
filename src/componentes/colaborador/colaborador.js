@@ -3,15 +3,15 @@
 import "./colaborador.css"
 
 const Colaborador =(props)=>{
-    const {dnombre, dpuesto, dfoto, dequipo}=props.datos
+    const {nombre, puesto, foto, equipo}=props.datos
     return <div className="colaborador">
         <div className="encabezado">
-            <img  src={dfoto} alt={dnombre}/>
+            <img  src={foto} alt={nombre}/>
         </div>
 
         <div className="info">
-            <h4>{dnombre}</h4>
-            <h5>{dpuesto}</h5>
+            <h4>{nombre}</h4>
+            <h5>{puesto}</h5>
         </div>
 
     </div>

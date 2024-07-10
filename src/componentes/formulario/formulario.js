@@ -36,11 +36,10 @@ const Formulario =(props) =>{
             <CampoTexto titulo="Foto" placeholder="Ingrese enlace de foto" required valor={foto} actualizarValor={actualizarFoto}/>
            
             <ListaOpciones 
-            equipos={props.equipo} // Cambia equiposs a equipos
+            equipos={props.equiposs} // Cambia equiposs a equipos
             valor={equipo}
             actualizarEquipo={actualizarEquipo}
             />
-
             <Boton>
                 CREAR
             </Boton>

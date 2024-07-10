@@ -81,14 +81,12 @@ function App() {
         />
       }
       <MiOrg cambiarMostrar={cambiarMostrar}/>
-
       {
         equiposs.map((equipo)=> <Equipo 
           datos={equipo} 
           key={equipo.titulo}
-          colaboradores={colaboradores}/>
-        )
-      
+          colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)} // Pasa la lista completa de colaboradores
+        />)
       }
       
     </div>
@@ -96,3 +94,4 @@ function App() {
 }
 
 export default App;
+
