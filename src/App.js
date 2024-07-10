@@ -5,6 +5,7 @@ import Formulario from './componentes/formulario/formulario.js';
 import MiOrg from './componentes/miOrg/miOrg.js';
 import { useState } from 'react';
 import Equipo from './componentes/equipos/equipos.js';
+import Footer from './componentes/footer/footer.js';
 
 
 function App() {
@@ -76,7 +77,7 @@ function App() {
       <Header/>
       {/*mostrarFormualrio ?<Formulario/>:<></>*/}
       {mostrarFormualrio&&<Formulario 
-          equiposs={equiposs.map((equipo)=>{return equipo.titulo})}
+          equiposs={equiposs.map((equipo)=>equipo.titulo)}
           RegistrarColaborador={registrarColaborador}
         />
       }
@@ -88,6 +89,7 @@ function App() {
           colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)} // Pasa la lista completa de colaboradores
         />)
       }
+      <Footer/>
       
     </div>
   );
