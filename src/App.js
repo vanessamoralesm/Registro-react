@@ -149,7 +149,7 @@ function App() {
   const like =(id)=>{
     console.log("like", id)
     const colaboradoresActualizados = colaboradores.map((colabor)=>{
-      if(colabor.fav===id){
+      if(colabor.id===id){
         colabor.fav =!colabor.fav
       }
       return colabor
